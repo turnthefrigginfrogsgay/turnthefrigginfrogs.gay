@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I DON'T LIKE 'EM PUTTING CHEMICALS IN THE WATER THAT TURN THE FRIGGIN FROGS GAY</title>
+	<script>
+            function gayify() {
+                const theButton = document.getElementById("gayButton");
+		theButton.remove();
+		var audio = new Audio('/public/gayfrogs.mp3');
+		audio.loop = true;
+		audio.play();
+		const body = document.getElementById("main");
+		body.style.backgroundImage = "url(/public/gayflag.gif)"
+		const credits = document.getElementById("credits");
+		credits.style.display = "block"
+		const frogs = document.getElementById("frogs");
+		frogs.src = "/public/gayerfrogs.png"
+            }
+        </script>
+    </head>
+    <body id="main" style="margin: 0; background-color:blue; flex-direction: column;height:100%;display:flex;justify-content:center;align-items:center">
+        <div><img src="/public/gayfrogs.png" id="frogs" alt="gay frogs" style="max-height:80svh;max-width:100%"></img></div>
+	<div id="gayButton"><button onclick="gayify()">Put chemicals in the water</button></div>
+	<div id="credits" style="display:none"><p style="color: white;text-decoration-line: underline;"><a href="https://www.youtube.com/watch?v=9JRLCBb7qK8" style="color:white;">Remix created by placeboing</a></p></div>
+    </body>
+</html>
